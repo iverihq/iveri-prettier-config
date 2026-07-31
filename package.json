@@ -1,0 +1,34 @@
+{
+  "name": "@iveri/prettier-config",
+  "version": "0.0.1",
+  "description": "Shared Prettier configuration for Iveri repos",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iverihq/iveri-prettier-config.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "main": "index.json",
+  "files": [
+    "index.json",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "echo \"@iveri/prettier-config ships JSON only — nothing to build\"",
+    "test": "node ./scripts/verify-config.mjs",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "prettier": "./index.json",
+  "peerDependencies": {
+    "prettier": ">=3"
+  },
+  "devDependencies": {
+    "prettier": "^3.4.2"
+  }
+}
